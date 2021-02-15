@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\DividaController;
+use App\Http\Controllers\DevedorController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +16,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',[DividaController::class,'index'])->name('divida.index');
+Route::get('/divida/{devedor_id}',[DividaController::class,'form'])->name('divida.form');
+Route::post('/divida',[DividaController::class,'post'])->name('diviva.post');
+
+Route::get('/devedor',[DevedorController::class,'index'])->name('divida.index');
+Route::get('/devedor/form/',[DevedorController::class,'form'])->name('divida.form');
+Route::post('/devedor/post',[DevedorController::class,'post'])->name('diviva.post');
+
+
