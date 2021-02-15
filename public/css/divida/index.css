@@ -1,0 +1,15 @@
+.div-botao-adicionar-devedor{
+    text-align: right;
+    margin: 5px 0;
+}
+
+.botao-adicionar-devedor{
+    background-color: #BDF0E0;
+    color: #32364a;
+    
+}
+
+.div-tabela-devedores{
+    padding-top: 25px;
+    text-align: center;
+}

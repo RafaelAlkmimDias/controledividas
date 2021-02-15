@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+}
+
+.top-bar{
+    background-color: #f0e3d6;
+    color: #32364a;
+    padding: 15px;
+}
+
+.top-bar-title{
+
+}
+
+.content{
+    padding: 25px;
+    text-align: center;
+}
+
+.btn{
+    padding: 10px 15px;
+    border-radius: 3px;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+}
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn-submit{
+    color: #32364a;
+    background-color: #BDF0E0;
+}
+
+
+.btn-info{
+    color: #32364a;
+    background-color: #BDC9F0;
+}
+
+.btn-danger{
+    color: #32364a;
+    background-color: #F0D1C9;
+}
+
+.div-form{
+    padding: 20px;
+    border: 2px solid #f0e3d6;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: left;
+}
+.div-input-form{
+    padding: 5px 0;
+}
+.div-input-form-divida{
+    padding: 5px;
+    width: calc(33% - 12px);;
+    display: inline-block;
+}
+.input-form{
+    padding: 6px;
+    border-radius: 5px;
+    display: block;
+    min-width: 185px;
+}
+.label-form{
+
+}
+.div-submit{
+    margin-top: 40px;
+    text-align: right;
+}
+
+.div-submit-divida{
+    margin-top: 10px;
+    text-align: right;
+}
+
+.error-message-div{
+    background-color: #F0D1C9;
+}
+.sucess-message-div{
+    background-color: #BDF0E0;
+}
+.message-text{
+    display: inline-block;
+    color: #32364a;
+}
+
+.app-table{
+    width: 100%;
+    border: 2px solid #f0e3d6;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #f0e3d6;
+    color: #32364a;
+}
+table, th, td {
+    border: 1px solid #f0e3d6;
+  }
+
+.app-table th{
+    padding: 5px;
+}
+.app-table td{
+    padding: 7px;
+}

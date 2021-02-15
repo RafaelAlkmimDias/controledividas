@@ -22,6 +22,35 @@ class Devedor extends Model
     ];
 
     public function divida(){
-        return $this->hasMany(Divida::class, 'devedor_id', 'id');
+        return $this->hasMany(Divida::class, 'devedor_id', 'id')->orderBy('vencimento');
+    }
+    public function vencimentoAtual(){
+
+        $json = json_decode ($this->hasMany(Divida::class, 'devedor_id', 'id')->orderBy('vencimento')->first(),1);
+
+        if(isset($json['vencimento'])){
+            return date('d/m/Y', strtotime( $json['vencimento'] ));
+        }
+
+        return "-";
+
+    }
+    public function valorAtual(){
+        $json = json_decode ($this->hasMany(Divida::class, 'devedor_id', 'id')->orderBy('vencimento')->first(),1);
+
+        if(isset($json['valor'])){
+            return number_format( $json['valor'], 2, ',', '');
+        }
+
+        return "0.00";
+    }
+    public function valorTotal(){
+        $json = json_decode ($this->hasMany(Divida::class, 'devedor_id', 'id')->sum('valor') ,1);
+
+        if(isset($json)){
+            return number_format( $json, 2, ',', '');
+        }
+
+        return "-";
     }
 }

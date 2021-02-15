@@ -1,0 +1,27 @@
+.div-botao-adicionar-divida{
+    text-align: right;
+    margin: 5px 0;
+}
+
+.botao-adicionar-divida{
+    background-color: #BDF0E0;
+    color: #32364a;
+    
+}
+
+.dados-devedor{
+    border: 2px solid #BDC9F0;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 25px;
+    text-align: left;
+    min-width: 500px;
+}
+.div-input-form{
+    width: 50%;
+    display: inline-block;
+}
+
+.div-tabela-dividas{
+    margin-top: 50px;
+}
