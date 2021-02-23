@@ -30,7 +30,7 @@ services:
     ports:
       - "3307:3306"
     volumes:
-      - ./docker-assets/dbdata:/var/lib/mysql
+    #  - ./docker-assets/dbdata:/var/lib/mysql
       - ./docker-assets/mysql/my.cnf:/etc/mysql/my.cnf
     environment:
       MYSQL_DATABASE: laravel
