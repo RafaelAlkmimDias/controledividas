@@ -35,6 +35,8 @@ services:
     environment:
       MYSQL_DATABASE: laravel
       MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: teste
+      MYSQL_PASSWORD: teste
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     #command: --init-file ./docker-assets/scripts/init.sql
